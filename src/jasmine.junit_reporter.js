@@ -1,5 +1,7 @@
 (function() {
 
+    var uuid = require('node-uuid');
+
     if (typeof jasmine == 'undefined') {
         throw new Error("jasmine library does not exist in global namespace!");
     }
@@ -129,7 +131,7 @@
             var suites = runner.suites();
             for (var i = 0; i < suites.length; i++) {
                 var suite = suites[i];
-                var fileName = this.filePrefix + this.getFullName(suite, true) + '.xml';
+                var fileName = this.filePrefix + uuid.v4() + '.xml';
                 var output = '<?xml version="1.0" encoding="UTF-8" ?>';
                 // if we are consolidating, only write out top-level suites
                 if (this.consolidate && suite.parentSuite) {

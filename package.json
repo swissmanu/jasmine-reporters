@@ -10,7 +10,9 @@
     "url": "git://github.com/larrymyers/jasmine-reporters.git"
   },
   "main": "./src/load_reporters.js",
-  "dependencies": {},
+  "dependencies": {
+    "node-uuid": "~1.4.1"
+  },
   "devDependencies": {},
   "licenses": [
     {
