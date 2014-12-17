@@ -2,7 +2,7 @@
   "author": "Larry Myers",
   "name": "jasmine-reporters",
   "description": "Reporters for the Jasmine BDD Framework",
-  "version": "0.4.1",
+  "version": "2.0.3",
   "homepage": "https://github.com/larrymyers/jasmine-reporters",
   "maintainers": "Ben Loveridge <bloveridge@gmail.com>",
   "repository": {
@@ -11,7 +11,8 @@
   },
   "main": "./src/load_reporters.js",
   "dependencies": {
-    "node-uuid": "~1.4.1"
+    "node-uuid": "~1.4.1",
+    "mkdirp": "~0.3.5"
   },
   "devDependencies": {},
   "licenses": [
